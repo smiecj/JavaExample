@@ -1,2 +1,7 @@
+# vscode config
+.vscode
+
+# bin and log
 target
 bin
+test.log

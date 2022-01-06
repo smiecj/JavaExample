@@ -36,6 +36,14 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.7</version>
 		</dependency>
+
+		<dependency>
+			<groupId>jline</groupId>
+			<artifactId>jline</artifactId>
+			<version>2.12</version>
+			<!-- <scope>system</scope>
+			<systemPath>/home/coding/jline2/target/jline-2.12.jar</systemPath> -->
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -43,6 +51,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<includeSystemScope>true</includeSystemScope>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
