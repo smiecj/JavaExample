@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({"com.example.restservice", "com.basic.command"})
+@ComponentScan({"com.example.restservice", "com.basic.command", "com.bigdata.impala"})
 public class RestServiceApplication {
 
     public static void main(String[] args) {

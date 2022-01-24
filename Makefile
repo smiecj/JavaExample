@@ -1,3 +1,6 @@
+build:
+	mvn clean package -DskipTests
+
 run:
 	ps -ef | grep "rest-service-complete" | grep -v grep | awk '{print $$2}' | xargs --no-run-if-empty kill -9
 	mvn clean package -DskipTests
@@ -14,3 +17,6 @@ read:
 
 encode:
 	curl http://localhost:8081/command/encode
+
+impala:
+	curl -H "Content-Type:application/json" -X POST -d '{"query": "show databases"}' http://localhost:8081/impala/query
