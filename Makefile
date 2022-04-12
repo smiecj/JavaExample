@@ -20,3 +20,6 @@ encode:
 
 impala:
 	curl -H "Content-Type:application/json" -X POST -d '{"query": "show databases"}' http://localhost:8081/impala/query
+
+test_security:
+	mvn test -Dtest=com.security.Parent
