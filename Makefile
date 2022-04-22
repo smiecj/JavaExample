@@ -26,3 +26,6 @@ impala:
 
 test_security:
 	mvn test -Dtest=com.security.Parent
+
+test_list:
+	mvn test -Dtest=com.basic.ListTests#testList
