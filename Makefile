@@ -21,6 +21,9 @@ read:
 encode:
 	curl http://localhost:8081/command/encode
 
+hive:
+	curl http://localhost:8081/hive/connect
+
 impala:
 	curl -H "Content-Type:application/json" -X POST -d '{"query": "show databases"}' http://localhost:8081/impala/query
 
